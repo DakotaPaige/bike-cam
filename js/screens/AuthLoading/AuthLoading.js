@@ -1,14 +1,16 @@
 import React, { Component } from 'react';
 import { ActivityIndicator } from 'react-native';
+import firebase from 'firebase';
 
 class AuthLoadingContainer extends Component {
   componentDidMount() {
-    const { token } = this.props;
-    const userToken = Array.from(token)[0];
-    this.props.navigation.navigate(userToken ? 'App' : 'Auth');
+    console.log('USER:', firebase.currentUser);
+    this.props.navigation.navigate(firebase.currentUser ? 'App' : 'Auth');
   }
 
   render() {
-    return <ActivityIndicator style={styles.loading} />;
+    return <ActivityIndicator />;
   }
 }
+
+export default AuthLoadingContainer;

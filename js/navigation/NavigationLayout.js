@@ -1,12 +1,15 @@
-import {
-  createStackNavigator,
-  createBottomTabNavigator,
-  createSwitchNavigator
-} from 'react-navigation';
+import { createStackNavigator, createSwitchNavigator } from 'react-navigation';
+
+import SignInPage from '../screens/Login';
+import HomePage from '../screens/Home';
+import AuthLoadingContainer from '../screens/AuthLoading';
 
 const appStack = createStackNavigator({
-  Home: HomePage,
-  Camera: CameraPage
+  Home: HomePage
+});
+
+const authSwitch = createStackNavigator({
+  SignIn: SignInPage
 });
 
 export default createSwitchNavigator(

@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
-import { View, Text, Image } from 'react-native';
+import { View, TextInput, Text, Button } from 'react-native';
+import auth from '../../firebase/firebase';
 
-class Login extends Component {
+export default class Login extends Component {
   constructor() {
     super();
     this.state = {
@@ -23,7 +24,7 @@ class Login extends Component {
     event.preventDefault();
     try {
       await auth.signInWithEmailAndPassword(email, password);
-      this.props.history.push('/');
+      this.props.navigation.navigate('Home');
     } catch (e) {
       console.log(e);
     }
@@ -33,6 +34,16 @@ class Login extends Component {
     return (
       <View>
         <Text>Login</Text>
+        <TextInput
+          onChangeText={email => this.setState({ email })}
+          value={this.state.email}
+        />
+        <TextInput
+          onChangeText={password => this.setState({ password })}
+          value={this.state.password}
+          secureTextEntry
+        />
+        <Button onPress={this.login} title="Sign In" />
       </View>
     );
   }
