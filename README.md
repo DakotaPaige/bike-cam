@@ -15,6 +15,12 @@ For more information, visit [VanQuish Collisions Hackathon](https://vancouver.ca
 * [planning](https://drive.google.com/drive/folders/1TDqnBpJOCtf-AF4dPaQhjDjzbMjwIjec)
 * [Design prototype](https://projects.invisionapp.com/share/SWNYC256GD5#/screens/318865297_Screen_2)
 
+## Demo
+
+Note: camera function unavailable due to emulator recording (fully functional on physical devices)
+
+![alt text](/bikewell-gif.gif?raw=true "BikeWell")
+
 ## Setup
 
 Note: currently only official support for ios (may also work on Android)
