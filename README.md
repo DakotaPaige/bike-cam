@@ -19,3 +19,5 @@ Note: currently only official support for ios (may also work on Android)
 ## Starting the app
 
 * run `react-native run-ios`
+
+### [back-end repo](https://github.com/DimaMukhin/bike-cam-backend)
