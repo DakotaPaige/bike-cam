@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="29px" height="26px" viewBox="0 0 29 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>Home</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Style-Guide" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="screen-2" transform="translate(-37.000000, -615.000000)" fill="#7D7D7D" fill-rule="nonzero">
+            <g id="Home" transform="translate(37.000000, 615.000000)">
+                <path d="M14.5,0 C14.5,0 5.5303,7.71333333 0.51765,11.8906667 C0.195076584,12.1706526 0.0069310752,12.5738518 0,13 C0,13.7977446 0.649187113,14.4444444 1.45,14.4444444 L4.35,14.4444444 L4.35,24.5555556 C4.35,25.3533002 4.99918711,26 5.8,26 L10.15,26 C10.9508129,26 11.6,25.3533002 11.6,24.5555556 L11.6,18.7777778 L17.4,18.7777778 L17.4,24.5555556 C17.4,25.3533002 18.0491871,26 18.85,26 L23.2,26 C24.0008129,26 24.65,25.3533002 24.65,24.5555556 L24.65,14.4444444 L27.55,14.4444444 C28.3508129,14.4444444 29,13.7977446 29,13 C28.9958982,12.5648433 28.7910993,12.1557495 28.44465,11.8906667 C23.4668,7.71333333 14.5,0 14.5,0 Z" id="Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>

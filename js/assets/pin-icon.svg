@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="50px" height="50px" viewBox="0 0 50 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>pin icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Style-Guide" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="screen-2" transform="translate(-255.000000, -334.000000)" fill-rule="nonzero">
+            <g id="pin-icon" transform="translate(256.000000, 335.000000)">
+                <circle id="Oval-3-Copy-2" stroke="#F5F5F5" cx="24" cy="24" r="24"></circle>
+                <g id="Pin" transform="translate(14.000000, 11.000000)" fill="#FFCF48">
+                    <g id="pin">
+                        <path d="M0,10.125 C8.22968405e-08,4.53311697 4.47715256,1.51040418e-07 10,1.51040418e-07 C15.5228474,1.51040419e-07 19.9999999,4.53311697 20,10.125 C20,16.875 10,27 10,27 C10,27 0,16.875 0,10.125 Z M5.83333333,10.125 C5.83333333,12.4549513 7.69881354,14.34375 10,14.34375 C12.3011865,14.34375 14.1666667,12.4549513 14.1666667,10.125 C14.1666667,7.79504871 12.3011865,5.90625 10,5.90625 C7.69881354,5.90625 5.83333333,7.79504871 5.83333333,10.125 Z" id="Shape"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

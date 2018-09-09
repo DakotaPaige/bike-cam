@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 import {
   View,
   Text,
-  Button,
   ScrollView,
-  TouchableHighlight
+  TouchableHighlight,
+  Image
 } from 'react-native';
 import { AnimatedCircularProgress } from 'react-native-circular-progress';
 import { getCyclistById } from '../../services/redArtsClient';
@@ -49,17 +49,32 @@ class Home extends Component {
             )}
           </AnimatedCircularProgress>
           <View style={styles.contentBlock}>
-            <View>
+            <View style={styles.data}>
+              <Image
+                source={require('../../assets/trip-yellow.png')}
+                style={logoStyles}
+                resizeMode="contain"
+              />
               <Text>21</Text>
               <Text>Trips</Text>
             </View>
-            <View>
+            <View style={styles.data}>
+              <Image
+                source={require('../../assets/Weather.png')}
+                style={{ width: 25, height: 25 }}
+                resizeMode="contain"
+              />
               <Text>0</Text>
               <Text>Collisions</Text>
             </View>
-            <View>
+            <View style={styles.data}>
+              <Image
+                source={require('../../assets/Pin.png')}
+                style={{ width: 25, height: 25 }}
+                resizeMode="contain"
+              />
               <Text>21</Text>
-              <Text>Total kms biked</Text>
+              <Text>Total kms</Text>
             </View>
           </View>
           <View style={styles.tripInfo}>
@@ -69,14 +84,14 @@ class Home extends Component {
             </View>
             <View style={styles.lastTripInfo}>
               <AnimatedCircularProgress
-                size={120}
+                size={80}
                 width={2}
                 fill={79}
                 tintColor="#00e0ff"
                 onAnimationComplete={() => console.log('onAnimationComplete')}
                 backgroundColor="#3d5875"
                 rotation={0}
-                style={styles.activity}
+                style={styles.lastTripMonitor}
               >
                 {fill => <Text>79</Text>}
               </AnimatedCircularProgress>
@@ -100,3 +115,8 @@ class Home extends Component {
 }
 
 export default Home;
+
+const logoStyles = {
+  width: 25,
+  height: 25
+};

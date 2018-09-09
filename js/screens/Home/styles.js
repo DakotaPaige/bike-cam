@@ -3,7 +3,8 @@ import { StyleSheet } from 'react-native';
 const styles = StyleSheet.create({
   contentBlock: {
     flexDirection: 'row',
-    alignSelf: 'center'
+    alignSelf: 'center',
+    marginBottom: 20
   },
   activity: {
     alignSelf: 'center',
@@ -23,14 +24,17 @@ const styles = StyleSheet.create({
     height: '100%'
   },
   lastTripInfo: {
-    flexDirection: 'row'
+    flexDirection: 'row',
+    alignItems: 'center'
   },
   tripInfo: {
     height: 200,
     width: '90%',
     alignSelf: 'center',
     borderColor: 'black',
-    borderWidth: 2
+    borderWidth: 2,
+    height: 140,
+    padding: 20
   },
   tripInfoHeader: {
     flexDirection: 'row',
@@ -49,7 +53,16 @@ const styles = StyleSheet.create({
     height: 135
   },
   percentage: {
-    fontSize: 30
+    fontSize: 30,
+    marginLeft: 37
+  },
+  average: {
+    marginLeft: 18
+  },
+  data: {
+    alignItems: 'center',
+    marginLeft: 10,
+    marginRight: 10
   }
 });
 
