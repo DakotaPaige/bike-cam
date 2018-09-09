@@ -1,5 +1,11 @@
 import React, { Component } from 'react';
-import { StyleSheet, Text, TouchableOpacity, View } from 'react-native';
+import {
+  StyleSheet,
+  Text,
+  TouchableOpacity,
+  View,
+  CameraRoll
+} from 'react-native';
 import { RNCamera } from 'react-native-camera';
 
 const PendingView = () => (
@@ -29,9 +35,8 @@ class Camera extends Component {
     const options = { quality: 0.5, base64: true };
     this.setState({ recording: true });
     const data = await camera.recordAsync(options);
-    //  eslint-disable-next-line
-    CameraRoll.saveToCameraRoll(video, data.uri);
     console.log(data.uri);
+    CameraRoll.saveToCameraRoll(data.uri, 'video');
   };
 
   stopRecording(camera) {
@@ -53,7 +58,6 @@ class Camera extends Component {
           }
         >
           {({ camera, status }) => {
-            console.log('CAMERA:', status);
             if (status !== 'READY') return <PendingView />;
             return (
               <View
