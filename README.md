@@ -8,6 +8,11 @@ Project created during VanQuish Collisions Hackathon (September 6 - September 8,
 The challenge: What interventions will move us more quickly towards our zero transportation related fatalities and serious injuries goal while encouraging active travel, especially for vulnerable road users such as seniors and children?  
 For more information, visit [VanQuish Collisions Hackathon](https://vancouver.ca/streets-transportation/vanquish-collisions-hackathon.aspx)
 
+## Additional Artifacts
+
+* [planning](https://drive.google.com/drive/folders/1TDqnBpJOCtf-AF4dPaQhjDjzbMjwIjec)
+* [Design prototype](https://projects.invisionapp.com/share/SWNYC256GD5#/screens/318865297_Screen_2)
+
 ## Setup
 
 Note: currently only official support for ios (may also work on Android)
