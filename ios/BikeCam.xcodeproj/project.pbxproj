@@ -28,6 +28,7 @@
 		2900DF6E2144500800627BDC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2900DF6A2144500800627BDC /* GoogleService-Info.plist */; };
 		299F4AB72144933300864ABE /* libRNCamera.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 299F4AB62144931C00864ABE /* libRNCamera.a */; };
 		299F4ABE2144B89100864ABE /* libRCTCameraRoll.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 299F4ABD2144B85600864ABE /* libRCTCameraRoll.a */; };
+		299F4AC82144CB2D00864ABE /* libRNSVG.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 299F4AC52144CB0100864ABE /* libRNSVG.a */; };
 		2D02E4BC1E0B4A80006451C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
@@ -126,6 +127,20 @@
 			proxyType = 2;
 			remoteGlobalIDString = 58B5115D1A9E6B3D00147676;
 			remoteInfo = RCTCameraRoll;
+		};
+		299F4AC42144CB0100864ABE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 299F4ABF2144CB0000864ABE /* RNSVG.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0CF68AC11AF0540F00FF9E5C;
+			remoteInfo = RNSVG;
+		};
+		299F4AC62144CB0100864ABE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 299F4ABF2144CB0000864ABE /* RNSVG.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 94DDAC5C1F3D024300EED511;
+			remoteInfo = "RNSVG-tvOS";
 		};
 		2D02E4911E0B4A5D006451C7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -365,6 +380,7 @@
 		2900DF6A2144500800627BDC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		299F4A8C2144931C00864ABE /* RNCamera.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RNCamera.xcodeproj; path = "../node_modules/react-native-camera/ios/RNCamera.xcodeproj"; sourceTree = "<group>"; };
 		299F4AB82144B85500864ABE /* RCTCameraRoll.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTCameraRoll.xcodeproj; path = "../node_modules/react-native/Libraries/CameraRoll/RCTCameraRoll.xcodeproj"; sourceTree = "<group>"; };
+		299F4ABF2144CB0000864ABE /* RNSVG.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RNSVG.xcodeproj; path = "../node_modules/react-native-svg/ios/RNSVG.xcodeproj"; sourceTree = "<group>"; };
 		2D02E47B1E0B4A5D006451C7 /* BikeCam-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BikeCam-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E4901E0B4A5D006451C7 /* BikeCam-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "BikeCam-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D16E6891FA4F8E400B85C8A /* libReact.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libReact.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -394,6 +410,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				299F4AC82144CB2D00864ABE /* libRNSVG.a in Frameworks */,
 				299F4ABE2144B89100864ABE /* libRCTCameraRoll.a in Frameworks */,
 				299F4AB72144933300864ABE /* libRNCamera.a in Frameworks */,
 				ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */,
@@ -573,6 +590,15 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		299F4AC02144CB0000864ABE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				299F4AC52144CB0100864ABE /* libRNSVG.a */,
+				299F4AC72144CB0100864ABE /* libRNSVG-tvOS.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -618,6 +644,7 @@
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				299F4ABF2144CB0000864ABE /* RNSVG.xcodeproj */,
 				299F4AB82144B85500864ABE /* RCTCameraRoll.xcodeproj */,
 				299F4A8C2144931C00864ABE /* RNCamera.xcodeproj */,
 				5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */,
@@ -854,6 +881,10 @@
 					ProductGroup = 299F4A8D2144931C00864ABE /* Products */;
 					ProjectRef = 299F4A8C2144931C00864ABE /* RNCamera.xcodeproj */;
 				},
+				{
+					ProductGroup = 299F4AC02144CB0000864ABE /* Products */;
+					ProjectRef = 299F4ABF2144CB0000864ABE /* RNSVG.xcodeproj */;
+				},
 			);
 			projectRoot = "";
 			targets = (
@@ -934,6 +965,20 @@
 			fileType = archive.ar;
 			path = libRCTCameraRoll.a;
 			remoteRef = 299F4ABC2144B85600864ABE /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		299F4AC52144CB0100864ABE /* libRNSVG.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRNSVG.a;
+			remoteRef = 299F4AC42144CB0100864ABE /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		299F4AC72144CB0100864ABE /* libRNSVG-tvOS.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libRNSVG-tvOS.a";
+			remoteRef = 299F4AC62144CB0100864ABE /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		2D16E6721FA4F8DC00B85C8A /* libRCTBlob-tvOS.a */ = {
@@ -1389,6 +1434,7 @@
 					"$(SRCROOT)/../../../React/**",
 					"$(SRCROOT)/../../react-native/React/**",
 					"$(SRCROOT)/../node_modules/CameraRoll/ios",
+					"$(SRCROOT)/../node_modules/react-native-svg/ios",
 				);
 				INFOPLIST_FILE = BikeCam/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1422,6 +1468,7 @@
 					"$(SRCROOT)/../../../React/**",
 					"$(SRCROOT)/../../react-native/React/**",
 					"$(SRCROOT)/../node_modules/CameraRoll/ios",
+					"$(SRCROOT)/../node_modules/react-native-svg/ios",
 				);
 				INFOPLIST_FILE = BikeCam/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
