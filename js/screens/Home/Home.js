@@ -16,6 +16,11 @@ class Home extends Component {
         >
           {fill => <Text>80</Text>}
         </AnimatedCircularProgress>
+        <View>
+          <Text>21</Text>
+          <Text>0</Text>
+          <Text>21</Text>
+        </View>
         <Button
           title="Open Camera"
           onPress={() => this.props.navigation.navigate('Camera')}
