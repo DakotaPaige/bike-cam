@@ -22,8 +22,8 @@ const PendingView = () => (
 );
 
 class Camera extends Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = {
       recording: false,
       processing: false
@@ -41,6 +41,7 @@ class Camera extends Component {
 
   stopRecording(camera) {
     camera.stopRecording();
+    this.props.navigation.navigate('Home');
     this.setState({ recording: false });
   }
 
