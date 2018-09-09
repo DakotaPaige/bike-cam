@@ -4,13 +4,16 @@ import { AnimatedCircularProgress } from 'react-native-circular-progress';
 import { getCyclistById } from '../../services/redArtsClient';
 
 class Home extends Component {
-
-  state = {
+  constructor() {
+    super();
+    this.state = {
       cyclist: undefined
-  };
+    };
+  }
 
   async componentDidMount() {
-    let cyclist =  await getCyclistById(3);
+    let cyclist = await getCyclistById(3);
+    console.log(cyclist);
     this.setState({ cyclist });
   }
 
@@ -20,12 +23,14 @@ class Home extends Component {
         <AnimatedCircularProgress
           size={120}
           width={2}
-          fill={80}
+          fill={this.state.cyclist ? this.state.cyclist.score : 0}
           tintColor="#00e0ff"
           onAnimationComplete={() => console.log('onAnimationComplete')}
           backgroundColor="#3d5875"
         >
-          {fill => <Text>{ this.state.cyclist ? this.state.cyclist.score : 0 }</Text>}
+          {fill => (
+            <Text>{this.state.cyclist ? this.state.cyclist.score : 0}</Text>
+          )}
         </AnimatedCircularProgress>
         <View>
           <Text>21</Text>
