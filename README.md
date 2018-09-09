@@ -19,6 +19,7 @@ The repository for our backend server can be found at [https://github.com/DimaMu
 * [Working Document](https://docs.google.com/document/d/1aGc-0LYovXgZZvaVaELlCj-LWW-S75i6alzwQUZVm1A/edit?usp=sharing)
 * [Design Prototype](https://projects.invisionapp.com/share/SWNYC256GD5#/screens/318865297_Screen_2)
 * [Current Data Deep Dive](https://docs.google.com/document/d/1mzx1RV_jE-osHMdvZXE46oqhNKPbGhqVbswHobPJT7M/edit?usp=sharing)
+* [Working Directory](https://drive.google.com/drive/folders/1TDqnBpJOCtf-AF4dPaQhjDjzbMjwIjec?usp=sharing)
 
 ## Demo
 
