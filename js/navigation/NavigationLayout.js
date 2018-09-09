@@ -4,6 +4,7 @@ import SignInPage from '../screens/Login';
 import HomePage from '../screens/Home';
 import AuthLoadingContainer from '../screens/AuthLoading';
 import CameraScreen from '../screens/Camera';
+import LoadingScreen from '../screens/LoadingScreen';
 
 const appStack = createStackNavigator({
   Home: HomePage,
@@ -16,11 +17,10 @@ const authSwitch = createStackNavigator({
 
 export default createSwitchNavigator(
   {
-    AuthLoading: AuthLoadingContainer,
-    App: appStack,
-    Auth: authSwitch
+    Loading: LoadingScreen,
+    App: appStack
   },
   {
-    initialRouteName: 'AuthLoading'
+    initialRouteName: 'Loading'
   }
 );
