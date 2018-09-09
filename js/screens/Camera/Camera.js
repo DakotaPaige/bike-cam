@@ -41,7 +41,9 @@ class Camera extends Component {
 
   stopRecording(camera) {
     camera.stopRecording();
-    this.props.navigation.navigate('Home');
+    this.props.navigation.navigate('Home', {
+        tripFinished: true
+    });
     this.setState({ recording: false });
   }
 

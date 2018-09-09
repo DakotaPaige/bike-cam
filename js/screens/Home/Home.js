@@ -4,7 +4,8 @@ import {
   Text,
   ScrollView,
   TouchableHighlight,
-  Image
+  Image,
+  Modal
 } from 'react-native';
 import { AnimatedCircularProgress } from 'react-native-circular-progress';
 import { getCyclistById } from '../../services/redArtsClient';
@@ -12,11 +13,18 @@ import Styles from './styles';
 import styles from './styles';
 
 class Home extends Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = {
-      cyclist: undefined
+      cyclist: undefined,
+      modalVisible: false
     };
+  }
+
+  componentWillMount() {
+      if (this.props.navigation.getParam('tripFinished', false)) {
+          this.setState({ modalVisible: true });
+      }
   }
 
   async componentDidMount() {
@@ -29,6 +37,24 @@ class Home extends Component {
     return (
       <View style={styles.content}>
         <ScrollView>
+        <Modal
+          animationType="slide"
+          transparent={false}
+          visible={this.state.modalVisible}>
+          <View style={{marginTop: 22}}>
+            <View>
+              <Text>Hello World!</Text>
+
+              <TouchableHighlight
+                onPress={() => {
+                  this.setModalVisible(!this.state.modalVisible);
+                }}>
+                <Text>Hide Modal</Text>
+              </TouchableHighlight>
+            </View>
+          </View>
+        </Modal>
+
           <AnimatedCircularProgress
             size={160}
             width={2}
