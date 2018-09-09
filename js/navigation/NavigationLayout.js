@@ -4,7 +4,7 @@ import {
   createSwitchNavigator,
   createBottomTabNavigator
 } from 'react-navigation';
-import { Text } from 'react-native';
+import { Text, Image } from 'react-native';
 
 import SignInPage from '../screens/Login';
 import HomePage from '../screens/Home';
@@ -15,6 +15,8 @@ import Rewards from '../screens/Rewards';
 import Profile from '../screens/Profile';
 import Trips from '../screens/Trips';
 
+import BannerImage from '../assets/bikewell-logologofull.png';
+
 const homeStack = createStackNavigator(
   {
     Home: HomePage,
@@ -22,14 +24,22 @@ const homeStack = createStackNavigator(
   },
   {
     navigationOptions: ({ navigation }) => ({
-      headerTitle: <Text>APP</Text>,
+      headerTitle: (
+        <Image
+          source={BannerImage}
+          style={{ width: 100, height: 50 }}
+          resizeMode="contain"
+        />
+      ),
       headerTitleStyle: {
         color: 'white'
       },
       headerStyle: {
-        backgroundColor: 'white',
-        height: 50
+        backgroundColor: 'transparent',
+        borderBottomWidth: 1,
+        borderBottomColor: 'white'
       },
+      headerTransparent: true,
       headerMode: 'screen'
     })
   }
@@ -58,13 +68,13 @@ const appStack = createBottomTabNavigator(
         const { routeName } = navigation.state;
         let iconName;
         if (routeName === 'Home') {
-          iconName = '';
+          return <Image source={require('../assets/Home.png')} />;
         } else if (routeName === 'Profile') {
-          iconName = `ios-search${focused ? '' : '-outline'}`;
+          return <Image source={require('../assets/Profile.png')} />;
         } else if (routeName === 'Rewards') {
-          iconName = `ios-add${focused ? '' : '-outline'}`;
+          return <Image source={require('../assets/Star.png')} />;
         } else if (routeName === 'Trips') {
-          iconName = `ios-contact${focused ? '' : '-outline'}`;
+          return <Image source={require('../assets/trip.png')} />;
         }
         return <Text>H</Text>;
       }

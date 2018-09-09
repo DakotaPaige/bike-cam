@@ -8,7 +8,7 @@ const styles = StyleSheet.create({
   },
   activity: {
     alignSelf: 'center',
-    marginTop: 30,
+    marginTop: 70,
     marginBottom: 30
   },
   cameraButton: {
