@@ -1,6 +1,8 @@
 # BIKEWELL
 
-Bikewell (previously bike-cam) is a a smart dash-cam app that focuses on encouraging good behaviour for cyclists. The app incentivizes good habits while at the same time provides valuable data to both users and city planners in the effort to reduce collisions. Our first efforts are being deployed and tested in the Greater Vancouver area
+![alt text](/bikewell-Vertical-phones.jpg?raw=true "BikeWell")
+
+Bikewell (previously bike-cam) is a a smart dash-cam app that focuses on encouraging good behaviour for cyclists. The app incentivizes good habits while at the same time provides valuable data to both users and city planners in the effort to reduce collisions. Our first efforts are being deployed and tested in the Greater Vancouver area.
 
 ## VanQuish Collisions Hackathon
 
